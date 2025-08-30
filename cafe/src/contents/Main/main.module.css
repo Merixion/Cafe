@@ -3,7 +3,7 @@
 	padding: 10px;
 	display: flex;
 	font-size: 30px;
-  scroll-margin-top: 1000px;
+	scroll-margin-top: 1000px;
 	img {
 		width: 25vw;
 		height: 25vw;
@@ -17,37 +17,71 @@ main {
 		font-weight: 1000;
 		font-size: 80px;
 	}
-  
-  section{
-    scroll-margin-top: 120px;
-  }
+
+	section {
+		scroll-margin-top: 120px;
+	}
 }
 
 .menu {
 	display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(5, 1fr);
+	gap: 20px;
+	grid-template-columns: repeat(5, 1fr);
 	.coffee {
-    padding: 20px;
-    border: 3px solid #f04c00;
-    border-radius: 10px;
+		padding: 20px;
+		border: 3px solid #f04c00;
+		border-radius: 10px;
 		img {
 			height: 192px;
 			width: 144px;
 			object-fit: cover;
-      border-radius: 10px;
+			border-radius: 10px;
 		}
-    
-    .buyBtn{
-      background: #f04c00;
-      width: 60px;
-      height: 40px;
-      font-size: 16px;
-      border-radius:10px ;
-    }
 
-    .buyBtn:hover{
-      background: #b53900;
-    }
+		.buyBtn {
+			background: #f04c00;
+			width: 60px;
+			height: 40px;
+			font-size: 16px;
+			border-radius: 10px;
+		}
+
+		.buyBtn:hover {
+			background: #b53900;
+		}
+
+		p {
+			font-size: 25px;
+		}
+	}
+}
+
+@media (max-width: 786px) {
+	.about {
+		font-size: 15px;
+		flex-direction: column-reverse;
+	}
+
+	main {
+		text-align: center;
+		h1 {
+			font-weight: 1000;
+			font-size: 30px;
+		}
+	}
+
+	.menu {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+		.coffee {
+			font-size: 10px;
+			p{
+				font-size: 10px;
+			}
+			img {
+				height: 96px;
+				width: 72px;
+			}
+		}
 	}
 }

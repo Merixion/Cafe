@@ -10,9 +10,21 @@
   }
   li::before{
     content: '☕️';
-    padding: 20px;
+    padding-right: 20px;
     border-image-width: 20px;
   }
   scroll-margin-bottom: 1000px;
 }
 
+@media (max-width: 786px) {
+  .footer{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  
+  li{
+    font-size: 13px;
+  }
+}
+}
