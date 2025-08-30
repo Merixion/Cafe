@@ -29,15 +29,22 @@ export default function Main({coffees}: {coffees: coffee[]}){
 				</article>
 				<img src='/logo.png' alt='LOGO'></img>
 			</section>
+			<h1>Menu</h1>
 			<section id='menu' className={styles.menu}>
 				{coffees.map(coffee => (
 					<article key={coffee.id} className={styles.coffee}>
 						<img src={coffee.image}></img>
-            <p>{coffee.name}</p>
-            <p>{coffee.description}</p>
-            <h2>{coffee.price/100} $</h2>
-            <button onClick={() => {alert(`You are bought ${coffee.name.toLowerCase()}`)}} 
-            className={styles.buyBtn}>Buy</button>
+						<p>{coffee.name}</p>
+						<p>{coffee.description}</p>
+						<h2>{coffee.price / 100} $</h2>
+						<button
+							onClick={() => {
+								alert(`You are bought ${coffee.name.toLowerCase()}`);
+							}}
+							className={styles.buyBtn}
+						>
+							Buy
+						</button>
 					</article>
 				))}
 			</section>
