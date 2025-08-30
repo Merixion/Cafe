@@ -1,0 +1,18 @@
+
+.footer{
+  background: #f04c00;
+  width: 75vw;
+  height: auto;
+  li{
+    font-size: 40px;
+    list-style: none;
+
+  }
+  li::before{
+    content: '☕️';
+    padding: 20px;
+    border-image-width: 20px;
+  }
+  scroll-margin-bottom: 1000px;
+}
+

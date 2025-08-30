@@ -1,0 +1,53 @@
+.about {
+	text-align: left;
+	padding: 10px;
+	display: flex;
+	font-size: 30px;
+  scroll-margin-top: 1000px;
+	img {
+		width: 25vw;
+		height: 25vw;
+		object-fit: cover;
+	}
+}
+
+main {
+	text-align: center;
+	h1 {
+		font-weight: 1000;
+		font-size: 80px;
+	}
+  
+  section{
+    scroll-margin-top: 120px;
+  }
+}
+
+.menu {
+	display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+	.coffee {
+    padding: 20px;
+    border: 3px solid #f04c00;
+    border-radius: 10px;
+		img {
+			height: 192px;
+			width: 144px;
+			object-fit: cover;
+      border-radius: 10px;
+		}
+    
+    .buyBtn{
+      background: #f04c00;
+      width: 60px;
+      height: 40px;
+      font-size: 16px;
+      border-radius:10px ;
+    }
+
+    .buyBtn:hover{
+      background: #b53900;
+    }
+	}
+}

@@ -1,0 +1,27 @@
+.header{
+  width: 75vw;
+  height: 100px;
+  background: #f04c00;
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+
+  a{
+    display: flex;
+    border-right: 5px solid #9f3402;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 65px;
+    width: 25vw;
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover{
+    background:  #9f3402;
+  }
+}
